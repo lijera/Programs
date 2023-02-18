@@ -1,0 +1,7 @@
+s=input()
+n=len(s)
+for i in range(n):
+    if s.count(s[i])&1==1:
+       if n&1==0 and i!=n//2 or n&1==1:
+           print(s[i])
+           break
